@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>adivina el numero</title>
+    <script>
+        let numeroPC = Math.floor(Math.random() * 10) + 1;
+        let numeroJugador = parseInt(prompt("adivina el numero el numero (entre 1 y 10)"));
+
+        if (numeroJugador == numeroPC) {
+            alert("adivinaste el numero")
+        } else {
+            alert("No es el numero correcto")
+            console.log(`NO ES CORRECTO
+             EL NUMERO QUE INGRESO ES ${numeroJugador} Y EL NUMERO CORRECTO ES ${numeroPC}`)
+        }
+
+        alert("gracias por participar")
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

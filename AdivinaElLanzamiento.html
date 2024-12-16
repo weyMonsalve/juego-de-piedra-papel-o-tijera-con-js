@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adivina el Lanzamieto </title>
+
+    <script>
+        let numeroPC = Math.floor(Math.random() * 6) + 1
+
+        let numeroJugador = parseInt(prompt("Adivina el numero de la cara del dado  (entre 1 y 6)"));
+
+
+        function eleccion(jugada) {
+            let resultado;
+
+            if (jugada == numeroPC) {
+                resultado = ("Adivinaste el numero")
+            } else {
+                resultado = ("Ese no es el numero. El numero correcto era  " + numeroPC + ",")
+            }
+            return resultado;
+        }
+
+        alert(eleccion(numeroJugador))
+    </script>
+</head>
+
+<body>
+    <h1>Adivina el lanzamiento del dado</h1>
+</body>
+
+</html>
